@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { View, FlatList, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, FlatList, Text, StyleSheet, TouchableOpacity, Alert } from 'react-native';
 
 import Cliente from '../components/Cliente';
 
@@ -7,22 +7,38 @@ import api from '../components/Api';
 
 import {useNavigation,} from '@react-navigation/native';
 
+type ClienteType = { id: number; nome: string; cpf: string; saldo: number };
+
 export default function ListarClientes() {
 
     const navigation = useNavigation();
-    
-    const [dados, setDados] = useState<any[]>([]);
+
+    const [clientes, setCliente] = useState<ClienteType[]>([]);
 
     async function buscaClientes(){
-        const resposta = await api.get('clientes');
-        setDados(resposta.data);
+        const response = await api.get('clientes');
+        setCliente(response.data);
     }
 
     useEffect(
         ()=>{
             buscaClientes();
-        }
+        },[]
     );
+
+    async function excluir(id: number) {
+            try {
+               const r = await api.delete(`clientes/${id}`);
+
+                Alert.alert(
+                "Excluir",`${JSON.stringify(r.data)}`
+                );
+
+                await buscaClientes();
+            } catch (e: any) {
+                Alert.alert("Erro ao excluir", e?.message ?? "Erro desconhecido");
+            }
+    }
  return (
     <>
         <View style={styles.bloco}>
@@ -35,9 +51,10 @@ export default function ListarClientes() {
             <Text style={styles.titulo}> Lista de Clientes </Text>
 
             <FlatList 
-                data={dados}
-                keyExtractor={(item)=>item.id}
-                renderItem={({item})=><Cliente nome={item.nome} cpf={item.cpf} saldo={item.saldo} id={item.id}/>}
+                data={clientes}
+                keyExtractor={(item)=> String(item.id)}
+                renderItem={({item})=><Cliente nome={item.nome} cpf={item.cpf} saldo={item.saldo} 
+                id={item.id} onExcluir={()=>excluir(item.id)}/>}
                 style={styles.lista}
             />
 
