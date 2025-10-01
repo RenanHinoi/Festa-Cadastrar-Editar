@@ -5,14 +5,17 @@ import Cliente from '../components/Cliente';
 
 import api from '../components/Api';
 
+import {useNavigation,} from '@react-navigation/native';
+
 export default function ListarClientes() {
 
+    const navigation = useNavigation();
+    
     const [dados, setDados] = useState<any[]>([]);
 
     async function buscaClientes(){
         const resposta = await api.get('clientes');
         setDados(resposta.data);
-        console.warn("tetse");
     }
 
     useEffect(
@@ -23,7 +26,7 @@ export default function ListarClientes() {
  return (
     <>
         <View style={styles.bloco}>
-            <TouchableOpacity style={styles.btn}>
+            <TouchableOpacity style={styles.btn} onPress={()=> navigation.navigate('TelaCad' as never)}>
                 <Text style={styles.txtBtn}>Cadastrar Novo Cliente</Text>
             </TouchableOpacity>
         </View>
