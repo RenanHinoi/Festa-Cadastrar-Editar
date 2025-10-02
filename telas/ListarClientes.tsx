@@ -39,6 +39,10 @@ export default function ListarClientes() {
                 Alert.alert("Erro ao excluir", e?.message ?? "Erro desconhecido");
             }
     }
+
+    function editar(item: ClienteType){
+      navigation.navigate('TelaEditar' as never, {cliente : item} as never);
+    }
  return (
     <>
         <View style={styles.bloco}>
@@ -54,7 +58,7 @@ export default function ListarClientes() {
                 data={clientes}
                 keyExtractor={(item)=> String(item.id)}
                 renderItem={({item})=><Cliente nome={item.nome} cpf={item.cpf} saldo={item.saldo} 
-                id={item.id} onExcluir={()=>excluir(item.id)}/>}
+                id={item.id} onExcluir={()=>excluir(item.id)} onEditar={()=>editar(item)}/>}
                 style={styles.lista}
             />
 

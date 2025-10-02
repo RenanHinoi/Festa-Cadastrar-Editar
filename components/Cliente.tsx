@@ -5,10 +5,11 @@ interface propCliente{
     nome:String,
     cpf:String,
     saldo:number,
-    onExcluir?: () => void;
+    onExcluir?: () => void,
+    onEditar?: () => void
 }
 
-export default function Cliente({id, nome, cpf, saldo,  onExcluir}:propCliente) {
+export default function Cliente({id, nome, cpf, saldo,  onExcluir, onEditar}:propCliente) {
  return (
    <>
         <Text style={styles.texto}>Cod.: {id}</Text>
@@ -21,7 +22,7 @@ export default function Cliente({id, nome, cpf, saldo,  onExcluir}:propCliente) 
                 <Text style={styles.txtBtn}>Excluir</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity style={styles.btn2}>
+            <TouchableOpacity style={styles.btn2} onPress={onEditar}>
                 <Text style={styles.txtBtn}>Editar</Text>
             </TouchableOpacity>
         </View>
