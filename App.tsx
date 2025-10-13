@@ -8,13 +8,19 @@ import Home from './telas/Home';
 import ListarClientes from './telas/ListarClientes';
 import TelaCad from './telas/TelaCad';
 import TelaEditar from './telas/TelaEditar';
+import ListarUsuarios from './telas/ListarUsuarios';
+import TelaCadUsuario from './telas/TelaCadUsuario';
+import TelaEditarUsuario from './telas/TelaEditarUsuario';
 
 const RootStack = createNativeStackNavigator({
   screens: {
     Home: Home,
     ListarClientes:ListarClientes,
     TelaCad:TelaCad,
-    TelaEditar:TelaEditar
+    TelaEditar:TelaEditar,
+    ListarUsuarios:ListarUsuarios,
+    TelaCadUsuario:TelaCadUsuario,
+    TelaEditarUsuario:TelaEditarUsuario
   },
 });
 
