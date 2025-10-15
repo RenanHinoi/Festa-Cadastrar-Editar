@@ -40,9 +40,9 @@ export default function ListarClientes() {
             }
     }
 
-    function editar(item: ClienteType){
-      navigation.navigate('TelaEditar' as never, {cliente : item} as never);
-    }
+   function editar(item: ClienteType){
+  navigation.navigate('TelaEditar' as never, { cliente: item } as never);
+}
  return (
     <>
         <View style={styles.bloco}>
@@ -68,29 +68,45 @@ export default function ListarClientes() {
 }
 
 const styles = StyleSheet.create({
-  titulo:{
-    fontSize:20,
-    fontWeight:'bold',
-    textAlign:'center',
-    marginTop:20
+  titulo: {
+    fontSize: 22,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    marginTop: 20,
+    color: '#ffffff', 
+    textShadowColor: '#000',
+    textShadowOffset: { width: 1, height: 1 },
+    textShadowRadius: 2,
   },
-  btn:{
-    backgroundColor:'#669988',
-    marginLeft:'10%',
-    marginRight:'10%',
-    marginTop:20,
-    padding:20,
-    borderRadius:20
+  btn: {
+    backgroundColor: '#121629', 
+    marginLeft: '10%',
+    marginRight: '10%',
+    marginTop: 20,
+    padding: 20,
+    borderRadius: 20,
+    borderWidth: 2,
+    borderColor: '#ffffff', 
+    shadowColor: '#000',
+    shadowOffset: { width: 2, height: 2 },
+    shadowOpacity: 0.3,
+    shadowRadius: 4,
   },
-  txtBtn:{
-    textAlign:'center',
-    fontSize:20
+  txtBtn: {
+    textAlign: 'center',
+    fontSize: 20,
+    color: '#ffffff',
+    fontWeight: 'bold',
+    letterSpacing: 1
   },
-  bloco:{
-    width:'100%'
+  bloco: {
+    width: '100%'
   },
-  lista:{
-    width:'80%',
-    height:'70%'
+  lista: {
+    width: '90%',
+    height: '75%',
+    backgroundColor: '#232946', 
+    borderRadius: 15,
+    alignSelf: 'center'
   }
 });

@@ -31,29 +31,48 @@ export default function Cliente({id, nome, cpf, saldo,  onExcluir, onEditar}:pro
 }
 
 const styles = StyleSheet.create({
-    texto:{
-        fontSize:25
+    texto: {
+        fontSize: 22,
+        color: '#ffffff', // branco para contraste
+        marginBottom: 2,
+        textAlign: 'center'
     },
-    row:{
-        flexDirection:"row",
-        justifyContent:'center',
-        width:'80%'
+    row: {
+        flexDirection: "row",
+        justifyContent: 'center',
+        alignItems: 'center',
+        width: '80%',
+        alignSelf: 'center'
     },
-    btn:{
-        flex:1,
-        backgroundColor:'#E41B40FF',
-        padding:15,
-        borderRadius:8,
-        margin:10
+    btn: {
+        flex: 1,
+        backgroundColor: '#121629', // preto azulado
+        padding: 15,
+        borderRadius: 8,
+        margin: 10,
+        borderWidth: 2,
+        borderColor: '#ffffff', 
+        shadowColor: '#000',
+        shadowOffset: { width: 1, height: 1 },
+        shadowOpacity: 0.3,
+        shadowRadius: 2,
     },
-    btn2:{
-        flex:1,
-        backgroundColor:'#E7D910FF',
-        padding:15,
-        borderRadius:8,
-        margin:10
+    btn2: {
+        flex: 1,
+        backgroundColor: '#232946', // azul escuro
+        padding: 15,
+        borderRadius: 8,
+        margin: 10,
+        borderWidth: 2,
+        borderColor: '#ffffff', // branco
+        shadowColor: '#000',
+        shadowOffset: { width: 1, height: 1 },
+        shadowOpacity: 0.3,
+        shadowRadius: 2,
     },
-    txtBtn:{
-        textAlign:'center'
+    txtBtn: {
+        textAlign: 'center',
+        color: '#ffffff', // branco
+        fontWeight: 'bold'
     }
-})
+});

@@ -70,27 +70,67 @@ export default function TelaCad() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#232946', 
     alignItems: 'center',
     justifyContent: 'center',
   },
-  titulo:{
-    fontSize:30,
-    fontWeight:'bold'
+  titulo: {
+    fontSize: 32,
+    fontWeight: 'bold',
+    color: '#ffffff',
+    backgroundColor: '#121629', 
+    paddingHorizontal: 24,
+    paddingVertical: 12,
+    borderRadius: 16,
+    marginBottom: 28,
+    textAlign: 'center',
+    textShadowColor: '#000',
+    textShadowOffset: { width: 2, height: 2 },
+    textShadowRadius: 6,
+    letterSpacing: 1
   },
-  bloco:{
-    marginLeft:'10%',
-    marginRight:'10%',
-    width:'80%',    
+  bloco: {
+    marginLeft: '10%',
+    marginRight: '10%',
+    width: '80%',
+    backgroundColor: '#fff',
+    borderRadius: 20,
+    padding: 25,
+    shadowColor: '#000',
+    shadowOffset: { width: 2, height: 2 },
+    shadowOpacity: 0.15,
+    shadowRadius: 8,
+    borderWidth: 2,
+    borderColor: '#232946'
   },
-  btn:{
-    backgroundColor:"#6691d6ff",
-    width:'100%',
-    marginTop:20,
-    borderRadius:20,
+  input: {
+    borderWidth: 2,
+    borderColor: '#232946', 
+    borderRadius: 10,
+    padding: 12,
+    marginBottom: 18,
+    fontSize: 18,
+    color: '#232946', 
+    backgroundColor: '#f7f7f7'
   },
-  txtBtn:{
-    textAlign:'center',
-    fontSize:25
+  btn: {
+    backgroundColor: '#121629', 
+    width: '100%',
+    marginTop: 20,
+    borderRadius: 20,
+    borderWidth: 2,
+    borderColor: '#232946', 
+    shadowColor: '#000',
+    shadowOffset: { width: 2, height: 2 },
+    shadowOpacity: 0.3,
+    shadowRadius: 4,
+    padding: 16
+  },
+  txtBtn: {
+    textAlign: 'center',
+    fontSize: 25,
+    color: '#ffffff',
+    fontWeight: 'bold',
+    letterSpacing: 1
   }
 });
