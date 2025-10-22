@@ -70,7 +70,7 @@
  const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#232946', 
+    backgroundColor: '#c11b1b', 
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -98,7 +98,7 @@
     borderColor: '#232946'
   },
   btn: {
-    backgroundColor: '#121629', 
+    backgroundColor: 'red', 
     width: '100%',
     marginTop: 20,
     borderRadius: 20,

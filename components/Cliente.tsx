@@ -33,7 +33,7 @@ export default function Cliente({id, nome, cpf, saldo,  onExcluir, onEditar}:pro
 const styles = StyleSheet.create({
     texto: {
         fontSize: 22,
-        color: '#ffffff', // branco para contraste
+        color: '#ffffff', 
         marginBottom: 2,
         textAlign: 'center'
     },
@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
     },
     btn: {
         flex: 1,
-        backgroundColor: '#121629', // preto azulado
+        backgroundColor: 'red',
         padding: 15,
         borderRadius: 8,
         margin: 10,
@@ -59,12 +59,12 @@ const styles = StyleSheet.create({
     },
     btn2: {
         flex: 1,
-        backgroundColor: '#232946', // azul escuro
+        backgroundColor: 'red', 
         padding: 15,
         borderRadius: 8,
         margin: 10,
         borderWidth: 2,
-        borderColor: '#ffffff', // branco
+        borderColor: '#ffffff', 
         shadowColor: '#000',
         shadowOffset: { width: 1, height: 1 },
         shadowOpacity: 0.3,
@@ -72,7 +72,7 @@ const styles = StyleSheet.create({
     },
     txtBtn: {
         textAlign: 'center',
-        color: '#ffffff', // branco
+        color: '#ffffff', 
         fontWeight: 'bold'
     }
 });

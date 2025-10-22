@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
     },
     btn: {
         flex: 1,
-        backgroundColor: '#121629', // preto azulado
+        backgroundColor: 'red',
         padding: 15,
         borderRadius: 8,
         margin: 10,
@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
     },
     btn2: {
         flex: 1,
-        backgroundColor: '#232946', // azul escuro
+        backgroundColor: 'red',
         padding: 15,
         borderRadius: 8,
         margin: 10,

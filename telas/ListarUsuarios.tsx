@@ -31,7 +31,7 @@ export default function ListarUsuarios() {
   }
 
   function editar(item: UsuarioType) {
-    navigation.navigate('TelaCadUsuario' as never, { usuario: item } as never);
+    navigation.navigate('TelaEditarUsuario' as never, { usuario: item } as never);
   }
 
   return (
@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
     textShadowRadius: 2,
   },
   btn: {
-    backgroundColor: '#121629', 
+    backgroundColor: 'red', 
     marginLeft: '10%',
     marginRight: '10%',
     marginTop: 20,
@@ -104,7 +104,7 @@ const styles = StyleSheet.create({
   lista: {
     width: '90%',
     height: '75%',
-    backgroundColor: '#232946', 
+    backgroundColor: '#c11b1b', 
     borderRadius: 15,
     alignSelf: 'center'
   }

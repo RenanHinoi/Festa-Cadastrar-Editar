@@ -30,7 +30,7 @@ export default function Home() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#232946', 
+    backgroundColor: '#c11b1b', 
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
     marginBottom: 30
   },
   btn: {
-    backgroundColor: '#121629', 
+    backgroundColor: 'red', 
     marginLeft: '10%',
     marginRight: '10%',
     marginTop: 20,
