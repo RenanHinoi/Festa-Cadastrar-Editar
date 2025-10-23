@@ -84,7 +84,7 @@ const {cliente} = route.params as {cliente: ClienteType};
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'red', 
+    backgroundColor: '#000000', 
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -119,7 +119,7 @@ const styles = StyleSheet.create({
   },
  
   btn: {
-    backgroundColor: 'red', 
+    backgroundColor: '#191970', 
     width: '100%',
     marginTop: 20,
     borderRadius: 20,

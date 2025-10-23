@@ -70,7 +70,7 @@ export default function TelaCad() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#232946', 
+    backgroundColor: '#000000', 
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -114,7 +114,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#f7f7f7'
   },
   btn: {
-    backgroundColor: '#121629', 
+    backgroundColor: '#191970', 
     width: '100%',
     marginTop: 20,
     borderRadius: 20,

@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
     textShadowRadius: 2,
   },
   btn: {
-    backgroundColor: 'red', 
+    backgroundColor: '#191970', 
     marginLeft: '10%',
     marginRight: '10%',
     marginTop: 20,
@@ -104,7 +104,7 @@ const styles = StyleSheet.create({
   lista: {
     width: '90%',
     height: '75%',
-    backgroundColor: '#c11b1b', 
+    backgroundColor: '#191970', 
     borderRadius: 15,
     alignSelf: 'center'
   }

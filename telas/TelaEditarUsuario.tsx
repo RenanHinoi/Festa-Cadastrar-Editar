@@ -80,7 +80,7 @@ export default function TelaEditarUsuario() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#c11b1b', 
+    backgroundColor: '#000000', 
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
     fontSize: 30,
     fontWeight: 'bold',
     color: '#ffffff',
-    backgroundColor: '#c11b1b', 
+    backgroundColor: '#000000', 
     paddingHorizontal: 24,
     paddingVertical: 12,
     borderRadius: 16,
@@ -103,7 +103,7 @@ const styles = StyleSheet.create({
     marginLeft: '10%',
     marginRight: '10%',
     width: '80%',
-    backgroundColor: '#fff', 
+    backgroundColor: '#5A5A5A', 
     borderRadius: 20,
     padding: 25,
     shadowColor: '#000',
@@ -124,7 +124,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#f7f7f7'
   },
   btn: {
-    backgroundColor: 'red', 
+    backgroundColor: '#191970', 
     width: '100%',
     marginTop: 20,
     borderRadius: 20,
